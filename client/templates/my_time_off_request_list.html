@@ -1,0 +1,24 @@
+<template name="myTimeOffRequestList">
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-icon icon ion-navicon ion-plus"></button>
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">My Time-off</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+        {{#each myTimeOffRequests}}
+          {{#ionItem avatar="true"}}
+            <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+            <h2>{{fullName}}</h2>
+            <p>{{hours}} hours from {{leaveFrom}}</p>
+          {{/ionItem}}
+        {{/each}}
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+
+</template>

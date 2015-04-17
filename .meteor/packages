@@ -5,10 +5,12 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 iron:router
-fourseven:scss
-meteoric:ionic-sass
-meteoric:ionicons-sass
+useraccounts:core
+accounts-password
+less
 meteoric:ionic
+meteoric:ionicons-sass
+meteoric:ionic-sass
+useraccounts:bootstrap
