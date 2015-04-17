@@ -1,0 +1,3 @@
+Template.requestDetail.helpers({
+
+});

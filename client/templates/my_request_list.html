@@ -4,21 +4,21 @@
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
-    <h1 class="title">My Time-off</h1>
+    <h1 class="title">My Time-Off</h1>
   {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
       {{#ionList}}
         {{#each myTimeOffRequests}}
-          {{#ionItem avatar="true"}}
+          {{#ionItem avatar="true" iconRight="true" path="timeOffRequestDetail"}}
             <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
             <h2>{{fullName}}</h2>
             <p>{{hours}} hours from {{leaveFrom}}</p>
+          {{#ionIcon icon="chevron-right" class="icon-accessory"}}{{/ionIcon}}
           {{/ionItem}}
         {{/each}}
       {{/ionList}}
     {{/ionContent}}
   {{/ionView}}
-
 </template>
